@@ -468,13 +468,14 @@ img {
 /* CONTACTO */
 .contact-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Contacto.png);
-    height: 60vh;
+    height: 65vh;
     color: var(--terceriario);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 25px;
 }
 
 .contact h2 {
