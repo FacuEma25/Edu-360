@@ -1,4 +1,4 @@
-var header = document.getElementById ('navbar');
+const header = document.getElementById ('navbar');
 
 window.addEventListener('scroll', ()=> {
     var scroll = window.scrollY
