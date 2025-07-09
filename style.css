@@ -917,7 +917,7 @@ img {
 
     .header-content {
         margin: 60px 0 0 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/Contacto.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/Portada-responsive.png);
         background-size: cover;
         background-position: center;
         display: flex;
@@ -1099,12 +1099,39 @@ img {
         font-size: 1rem;
     }
 
-    .titulos .contenedor-medi-text .medi-text{
+    .titulos .contenedor-medi-text .medi-text {
         font-size: 1.2rem;
     }
 
-    .items-1 h4{
+    .items-1 h4 {
         margin: 0 auto;
         margin-bottom: 15px;
+    }
+
+    .sub-septiembre {
+        width: 90%;
+    }
+
+    .curso-info-2-2 {
+        width: 80%;
+    }
+
+    .curso-info-2-oratoria {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nos-tittle h2{
+        font-size: 1.3rem;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact{
+        border: var(--terceriario) 1px solid;
+        padding: 15px;
+        border-radius: 15px;
     }
 }
