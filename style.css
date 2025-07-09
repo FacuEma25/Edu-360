@@ -269,10 +269,6 @@ img {
     transition: .2s;
 }
 
-.card-curso a:after {
-    content: " ➡";
-}
-
 .card-curso a:hover {
     background-color: var(--terceriario);
     color: var(--principal);
@@ -311,13 +307,13 @@ img {
     margin-top: 10px;
 }
 
-.titulos .contenedor-medi-text{
+.titulos .contenedor-medi-text {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
 }
 
-.titulos .contenedor-medi-text .medi-text{
+.titulos .contenedor-medi-text .medi-text {
     font-family: var(--fuente-secundaria);
     font-size: 1.6rem;
 }
@@ -511,7 +507,7 @@ img {
     border-radius: 15px;
 }
 
-.curso-info-3-medi .congela{
+.curso-info-3-medi .congela {
     margin: 0 auto;
     font-family: var(--fuente-secundaria);
     font-size: 1.2rem;
@@ -532,6 +528,10 @@ img {
 }
 
 /* NOSOTROS */
+.nosotros-img-2 {
+    display: none;
+}
+
 .nos-edu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -865,6 +865,10 @@ img {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
     .menu {
         padding: 15px 0;
     }
@@ -880,10 +884,15 @@ img {
         right: 0;
         display: none;
         background-color: var(--menu);
+        text-align: center;
     }
 
     .menu .navbar ul li {
         width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: var(--secundario);
     }
 
     #menu:checked~.navbar {
@@ -892,14 +901,18 @@ img {
 
     .menu-vertical {
         z-index: 10000;
-        /* background-color: var(--menu); */
-        background-color: var(--letra2);
-        color: var(--principal);
+        background-color: var(--botones);
+        color: var(--terceriario);
         left: 110px;
     }
 
     .menu .logo {
         padding: 0 25px 0 25px;
+    }
+
+    .logo-img {
+        width: 70px;
+        margin-top: 10px;
     }
 
     .header-content {
@@ -909,9 +922,189 @@ img {
         background-position: center;
         display: flex;
         flex-direction: column;
+        padding: 0;
+        text-align: center;
+        margin-top: 0;
+        padding: 25px 0;
+        padding-top: 120px;
+        height: 82vh;
+    }
+
+    .header-container h1 {
+        font-size: 1.7rem;
+    }
+
+    .header-container .header-text-1 {
+        font-size: 1.2rem;
+    }
+
+    .header-container .header-cuadrante .header-text-2 {
+        font-size: 1.2rem;
     }
 
     .content-2 {
         display: none;
+    }
+
+    .logos {
+        display: none;
+    }
+
+    .cursos-contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cursos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .items-2 {
+        padding: 20px;
+        text-align: left;
+    }
+
+    /* NOSOTROS */
+    .nos-edu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros-img {
+        display: none;
+    }
+
+    .nosotros-img-2 {
+        display: block;
+    }
+
+    .nosotros-texto {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-time {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container-2 {
+        margin: 0;
+    }
+
+    #contact-1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* CAMBIOS DE TAMAÑO DE TEXTO */
+    .cursos-contenedor .curso-titulo {
+        font-size: 2rem;
+    }
+
+    .titulos {
+        margin-bottom: 30px;
+    }
+
+    .titulo-curso-1 {
+        font-size: 2.3rem;
+    }
+
+    .subtituto-curso-1 {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    .items-1 h4 {
+        font-size: 1.7rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .curso-info-2 {
+        height: 300px;
+        grid-template-rows: 150px 150px;
+    }
+
+    .contact-text {
+        margin-bottom: 30px;
+    }
+
+    .contact h2 {
+        font-size: 2.4rem;
+    }
+
+    .contact .contact-subti {
+        font-size: 1.4rem;
+    }
+
+    .contact-text .contact-1 p {
+        font-size: 1.2rem;
+    }
+
+    .contact-time .contact-horario {
+        font-size: 1.2rem;
+    }
+
+    .barra {
+        display: none;
+    }
+
+    .curso-info-3 h4 {
+        font-size: 1.6rem;
+    }
+
+    .items-list-1 p {
+        font-size: 1rem;
+    }
+
+    .items-2 h4 {
+        font-size: 2rem;
+    }
+
+    .items-2 .items-list-2 p {
+        font-size: 1rem;
+    }
+
+    .items-2 .items-list-2 i {
+        font-size: 1rem;
+    }
+
+    .titulos .contenedor-medi-text .medi-text{
+        font-size: 1.2rem;
+    }
+
+    .items-1 h4{
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
 }
