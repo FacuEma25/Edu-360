@@ -119,6 +119,10 @@ img {
 }
 
 /* HEADER */
+.header-content-cel {
+    display: none;
+}
+
 .header-content {
     position: relative;
     width: 100%;
@@ -916,6 +920,10 @@ img {
     }
 
     .header-content {
+        display: none;
+    }
+
+    /* .header-content {
         margin: 60px 0 0 0;
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/Portada-responsive.png);
         background-size: cover;
@@ -945,6 +953,86 @@ img {
     .content-2 {
         display: none;
     }
+    */
+
+    .header-content-cel {
+        display: initial;
+    }
+
+    .header-content-cel {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0 0 0;
+        text-align: center;
+    }
+
+    .header-container-cel {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 25px;
+    }
+
+    .header-content-cel h1 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header-cuadrante-cel {
+        display: flex;
+        flex-direction: column;
+        padding: 0 25px;
+        width: 70%;
+        margin: 0 auto;
+        align-items: start;
+
+        border: var(--terceriario) 1px solid;
+        border-radius: 15px;
+    }
+
+    .header-cuadrante-cel p {
+        font-family: var(--fuente-secundaria);
+        font-size: 0.9rem;
+    }
+
+    .header-cuadrante-cel a {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .header-text-2 {
+        margin: 10px 0;
+    }
+
+    .cel-contenedor-1 p {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .boton-3 {
+        background-color: var(--botones);
+        border-radius: 10px;
+        padding: 10px 15px;
+        color: var(--terceriario);
+    }
+
+    .boton-3:hover {
+        background-color: var(--terceriario);
+        color: var(--secundario);
+    }
+
+    .fondo{
+        background-color: var(--terceriario);
+        color: var(--secundario);
+        padding: 0 5px;
+    }
+
+    /* FIN HEADER */
 
     .logos {
         display: none;
@@ -1122,14 +1210,14 @@ img {
         gap: 10px;
     }
 
-    .nos-tittle h2{
+    .nos-tittle h2 {
         font-size: 1.3rem;
         text-align: center;
         width: 80%;
         margin: 0 auto;
     }
 
-    .contact{
+    .contact {
         border: var(--terceriario) 1px solid;
         padding: 15px;
         border-radius: 15px;
