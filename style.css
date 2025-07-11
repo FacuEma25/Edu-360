@@ -536,6 +536,10 @@ img {
     display: none;
 }
 
+.nos-edu-cel {
+    display: none;
+}
+
 .nos-edu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -863,6 +867,11 @@ img {
     color: var(--secundario);
 }
 
+.derechos a {
+    color: var(--secundario);
+    text-decoration: none;
+}
+
 .footer-datos h4 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -1026,7 +1035,7 @@ img {
         color: var(--secundario);
     }
 
-    .fondo{
+    .fondo {
         background-color: var(--terceriario);
         color: var(--secundario);
         padding: 0 5px;
@@ -1062,7 +1071,7 @@ img {
     }
 
     /* NOSOTROS */
-    .nos-edu {
+    /* .nos-edu {
         display: flex;
         flex-direction: column;
     }
@@ -1079,7 +1088,57 @@ img {
         display: flex;
         flex-direction: column;
         padding: 15px;
+    } */
+
+    .nos-edu {
+        display: none;
     }
+
+    /* NOSOTROS CELULAR */
+    .nos-edu-cel {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .nos-cel-h2 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .nos-cel-tittle h2 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .nos-cel-texto {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .nos-cel-textos {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .nos-cel-textos p {
+        font-size: 0.8rem;
+        font-family: var(--fuente-secundaria);
+    }
+
+    .nos-cel-textos p:before {
+        content: "✔";
+    }
+
+    /* FIN DE NOS-CEL */
 
     .contact-content {
         display: flex;
