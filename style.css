@@ -502,6 +502,10 @@ img {
     margin: 0 auto;
 }
 
+.curso-info-3-medi .precio-ins{
+    margin: 0 auto;
+}
+
 .curso-info-3-medi .cuadrante {
     background-color: var(--terceriario);
     color: var(--principal);
